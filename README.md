@@ -59,15 +59,16 @@ DrvGo 是自動安裝驅動程式 (Driver) 與應用程式 (App) 的工具：選
 
 ### Environment (環境設定)
 
-每個項目都有 ON / OFF 開關 (預設全部 ON)。ON 的項目會在每次安裝的開始與結束時自動套用，**會永久改變系統設定**：
+每個項目都有 ON / OFF 開關 (預設全部 ON)。ON 的項目 (以及 OFF 的 Automatically restart) 會在每次安裝的開始與結束時自動套用，**會永久改變系統設定**：
 
 | 項目 | 說明 |
 | --- | --- |
 | Disable UAC | 關閉使用者帳戶控制 (重新開機後生效) |
-| Disable 'Automatically restart' on system failure | 系統當機時不自動重新開機 |
+| Disable 'Automatically restart' on system failure | 系統當機時不自動重新開機；設為 **OFF** 時改為開啟自動重新開機 (Windows 預設) |
 | Enable Testsigning | 允許安裝測試簽章的驅動程式 (重新開機後生效；開啟安全開機 Secure Boot 時無法設定) |
 | All power plans: turn off the display / put the computer to sleep = Never | 所有電源計畫都不關閉螢幕、不進入睡眠 |
 | Enable Hibernate | 啟用休眠，並在電源選單、「關機或登出」中顯示「休眠」 |
+| Memory dump type | 系統當機時的記憶體傾印類型，從右邊下拉選單選擇 (預設 **Active Memory Dump**)；重新開機後生效 |
 
 - **Apply Now**：不必等到安裝，依目前的開關立即套用，完成後顯示成功 / 失敗的項目數，以及需要重新開機才會生效的項目。
 - **OK** 儲存開關設定；**Cancel** 放棄變更。
