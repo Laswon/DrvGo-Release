@@ -2,6 +2,8 @@
 
 DrvGo 是自動安裝驅動程式 (Driver) 與應用程式 (App) 的工具：選擇放安裝檔的資料夾，DrvGo 會找出每個項目的最新版本，並依序自動安裝。
 
+> 📖 HTML 版使用手冊：[DrvGo_Manual.html](DrvGo_Manual.html) (下載後用瀏覽器開啟，內容與本頁相同)
+
 ## 下載
 
 到右側的 **[Releases](../../releases/latest)** 下載最新的 `DrvGo.exe`，不需要安裝，直接執行即可。
