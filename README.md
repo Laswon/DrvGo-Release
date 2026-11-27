@@ -37,7 +37,7 @@ DrvGo 是自動安裝驅動程式 (Driver) 與應用程式 (App) 的工具：選
 | **Start Installation Queue** | 安裝清單中所有項目 (先前已安裝成功的項目會自動略過) |
 | **Install Selected** | 只安裝選取的項目 (可按住 Ctrl / Shift 複選，也可在清單上按右鍵) |
 | **Retry Failed** | 只重新安裝失敗的項目 |
-| **Exclusive...** | 設定哪些項目是 Exclusive (只在 Install Selected 時安裝)，見下方說明 |
+| **Exclusive...** | 開啟「限選取安裝項目 (Exclusive)」設定視窗，自訂哪些項目要單獨安裝。邏輯：限選取安裝項目在按 Start Installation Queue (全部安裝) 時會被略過，只有在清單中選取它、再按 Install Selected 才會安裝；預設檔名或資料夾含 AWCC 或 Alienware-Command-Center 的項目屬於此類，你在視窗中調整過的項目以你的設定為準，並會保留到下次 (換成新版本資料夾也有效)。 |
 | **Stop** | 中斷安裝 (目前項目會被終止，其餘項目不再執行) |
 
 - 一次只安裝一個項目，進度條顯示整體進度。
