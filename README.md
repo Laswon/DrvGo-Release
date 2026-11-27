@@ -37,13 +37,13 @@ DrvGo 是自動安裝驅動程式 (Driver) 與應用程式 (App) 的工具：選
 | **Start Installation Queue** | 安裝清單中所有項目 (先前已安裝成功的項目會自動略過) |
 | **Install Selected** | 只安裝選取的項目 (可按住 Ctrl / Shift 複選，也可在清單上按右鍵) |
 | **Retry Failed** | 只重新安裝失敗的項目 |
-| **Exclusive...** | 開啟「限選取安裝項目 (Exclusive)」設定視窗，自訂哪些項目要單獨安裝。邏輯：限選取安裝項目在按 Start Installation Queue (全部安裝) 時會被略過，只有在清單中選取它、再按 Install Selected 才會安裝；預設檔名或資料夾含 AWCC 或 Alienware-Command-Center 的項目屬於此類，你在視窗中調整過的項目以你的設定為準，並會保留到下次 (換成新版本資料夾也有效)。 |
+| **Exclusive...** (中文介面：限選取安裝設定) | 開啟「限選取安裝項目 (Exclusive)」設定視窗，自訂哪些項目要單獨安裝。邏輯：限選取安裝項目在按 Start Installation Queue (全部安裝) 時會被略過，只有在清單中選取它、再按 Install Selected 才會安裝；預設檔名或資料夾含 AWCC 或 Alienware-Command-Center 的項目屬於此類，你在視窗中調整過的項目以你的設定為準，並會保留到下次 (換成新版本資料夾也有效)。 |
 | **Stop** | 中斷安裝 (目前項目會被終止，其餘項目不再執行) |
 
 - 一次只安裝一個項目，進度條顯示整體進度。
 - 安裝失敗的項目會等 30 秒後自動重試一次 (例如前一個安裝的背景程序還沒結束而失敗)，仍失敗才標示為失敗；執行日誌會顯示第一次失敗的原因。
-- Exclusive 項目：「Start Installation Queue」不會安裝，清單結果欄顯示 Exclusive (Install Selected only)；需要安裝時請選取它再按「Install Selected」。預設檔名或資料夾含 AWCC 或 Alienware-Command-Center (Alienware Command Center) 的項目為 Exclusive。
-- 按 **Exclusive...** 可自訂：左邊是 Exclusive、右邊是 Non-exclusive，選取項目 (可按住 Ctrl / Shift 複選) 後按中間的 ◀ / ▶ 或雙擊移到另一邊，按 OK 儲存。設定會保留，換成新版本的資料夾 (例如 X01 → X02) 仍有效。
+- 限選取安裝項目 (Exclusive)：「Start Installation Queue」不會安裝，清單結果欄顯示「限選取安裝 (Exclusive)」(英文介面為 Exclusive (Install Selected only))；需要安裝時請選取它再按「Install Selected」。預設檔名或資料夾含 AWCC 或 Alienware-Command-Center (Alienware Command Center) 的項目為限選取安裝項目。
+- 按 **Exclusive...** (中文介面為「限選取安裝設定 (Exclusive)」) 可自訂：左邊是限選取安裝 (Exclusive)、右邊是全部安裝 (Non-exclusive)，選取項目 (可按住 Ctrl / Shift 複選) 後按中間的 ◀ / ▶ 或雙擊移到另一邊，按 OK 儲存。設定會保留，換成新版本的資料夾 (例如 X01 → X02) 仍有效。
 - 同一資料夾有多個安裝檔 (例如同一程式的兩個版本) 時，DrvGo 只會依檔名挑一個安裝、不比較版號；按安裝時會先列出這些資料夾、會安裝與不會安裝的檔案，詢問是否繼續。建議把不要的版本移出資料夾。
 - 同編號的驅動程式與應用程式 (例如 `06_..._Drv` 與 `06_..._App`)，會先安裝 Drv；Drv 沒有安裝成功時，對應的 App 不會安裝。
 - 安裝過程中 DrvGo 會阻擋系統重新開機，請勿手動重開機。
